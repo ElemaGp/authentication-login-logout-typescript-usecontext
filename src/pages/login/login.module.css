@@ -1,0 +1,23 @@
+.formContainer{
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.passwordArea{
+    position: relative;
+
+}
+
+.passwordEyeIcon{
+    position: absolute;
+    right: 5px;
+    top: 11px;
+    font-size: 2rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
