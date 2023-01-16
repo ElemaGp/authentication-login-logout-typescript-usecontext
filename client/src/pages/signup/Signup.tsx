@@ -24,7 +24,7 @@ const Signup = () => {
         confirmPassword: Yup.string().oneOf([Yup.ref('password'), ''], 'Passwords much match').required('Required')
       })
     
-      const onSubmit = async (values: { email: string; username: string; password: string }, formikHelpers: { resetForm: () => void }) => {  //alternatively, i can just destructure this "values" object to directly get the username, password and email.
+      const onSubmit = async (values: { email: string; username: string; password: string }, formikHelpers: { resetForm: () => void }) => {  
         console.log('Form data', values)
     
         try{

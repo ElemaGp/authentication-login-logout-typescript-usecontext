@@ -1,0 +1,14 @@
+.homeContainer{
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeTextStyling{
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
