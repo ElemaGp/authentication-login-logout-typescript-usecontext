@@ -1,4 +1,4 @@
-import { initialStateArgument } from "./AuthContext";
+
 import { loginSuccessUserProp } from "./AuthActions";
 
 type actionProp = {

@@ -9,8 +9,10 @@ export type initialStateArgument = {
     dispatch?: React.Dispatch<any>
 }
 
+const userLs = localStorage.getItem("user");
+
 const INITIAL_STATE:initialStateArgument = {
-    user: JSON.parse(localStorage.getItem("user") || ""), //if the user had logged in before, the initial state when he comes back to the website will be the "user" jwt already stored in browser. Else, if he hadn't logged in, it'll be null.
+    user: userLs ? JSON.parse(userLs) : null, //if the user had logged in before, the initial state when he comes back to the website will be the "userL" which you declared above as the variable which stores the user item in localstorage. Else, if he hadn't logged in, it'll be null.
     isFetching: false,
     error: false,
 };
