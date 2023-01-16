@@ -7,7 +7,7 @@ import style from "./home.module.css"
 
 const Home = () => {
 
-  const {dispatch} = useContext(AuthContext);
+  const {user, dispatch} = useContext(AuthContext);
 
   const handleClick = () => {
       if (dispatch){
@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
       <div className={style.homeContainer}>
-          <p className={style.homeTextStyling}>IK, welcome to the homepage</p>
+          <p className={style.homeTextStyling}>{user?.username}, welcome to the homepage</p>
           <div className={style.homeBtn}>
             <Button variant='contained' size='large' color='secondary' sx={{textAlign:'center'}} onClick={handleClick}>LOGOUT</Button>
           </div>

@@ -1,9 +1,10 @@
 import AuthReducer from "./AuthReducer";
 import {createContext, ReactNode, useEffect, useReducer} from "react";
 import React from "react";
+import { loginSuccessUserProp } from "./AuthActions";
 
 export type initialStateArgument = {
-    user: string | null
+    user: loginSuccessUserProp | null
     isFetching: boolean
     error: boolean
     dispatch?: React.Dispatch<any>
