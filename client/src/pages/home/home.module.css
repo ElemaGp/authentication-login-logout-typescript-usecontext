@@ -1,0 +1,12 @@
+.homeStyling{
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeTextStyling{
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: 400;
+}

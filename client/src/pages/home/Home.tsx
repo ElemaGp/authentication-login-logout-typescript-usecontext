@@ -3,8 +3,8 @@ import style from "./home.module.css"
 
 const Home = () => {
   return (
-    <div>
-        IK, welcome to the homepage
+    <div className={style.homeStyling}>
+        <p className={style.homeTextStyling}>IK, welcome to the homepage</p>
     </div>
   )
 }
